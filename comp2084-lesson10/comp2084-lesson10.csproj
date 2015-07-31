@@ -65,10 +65,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="auth.ascx" />
     <Content Include="course-details.aspx" />
     <Content Include="courses.aspx" />
     <Content Include="department-details.aspx" />
     <Content Include="departments.aspx" />
+    <Content Include="instructor-register.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="logout.aspx" />
     <Content Include="site.Master" />
     <EntityDeploy Include="Models\Contoso.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -100,9 +104,18 @@
     <Content Include="Global.asax" />
     <Content Include="student.aspx" />
     <Content Include="students.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="auth.ascx.cs">
+      <DependentUpon>auth.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="auth.ascx.designer.cs">
+      <DependentUpon>auth.ascx</DependentUpon>
+    </Compile>
     <Compile Include="course-details.aspx.cs">
       <DependentUpon>course-details.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -141,6 +154,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="instructor-register.aspx.cs">
+      <DependentUpon>instructor-register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="instructor-register.aspx.designer.cs">
+      <DependentUpon>instructor-register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Contoso.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -163,6 +197,9 @@
       <DependentUpon>Contoso.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Enrollment.cs">
+      <DependentUpon>Contoso.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Instructor.cs">
       <DependentUpon>Contoso.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Student.cs">

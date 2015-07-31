@@ -80,7 +80,7 @@ namespace comp2084_lesson10
                     StudentID = Convert.ToInt32(Request.QueryString["StudentID"]);
 
                     //look up the student
-                    stud = (from d in db.Students
+                    stud = (from d in db.Students n
                             where d.StudentID == StudentID
                             select d).FirstOrDefault();
                 }

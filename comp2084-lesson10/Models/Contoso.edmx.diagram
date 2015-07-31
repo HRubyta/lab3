@@ -12,6 +12,8 @@
         <AssociationConnector Association="comp2084Model.FK_Courses_DepartmentID" ManuallyRouted="false" />
         <AssociationConnector Association="comp2084Model.FK_Enrollments_CourseID" ManuallyRouted="false" />
         <AssociationConnector Association="comp2084Model.FK_Enrollments_StudentID" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="comp2084Model.Instructor" Width="1.5" PointX="3" PointY="7.875" />
+        <AssociationConnector Association="comp2084Model.FK_Instructors_Departments" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

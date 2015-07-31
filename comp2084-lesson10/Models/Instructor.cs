@@ -12,14 +12,16 @@ namespace comp2084_lesson10.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Enrollment
+    public partial class Instructor
     {
-        public int EnrollmentID { get; set; }
-        public int CourseID { get; set; }
-        public int StudentID { get; set; }
-        public Nullable<int> Grade { get; set; }
+        public int InstructorID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Salt { get; set; }
+        public int DepartmentID { get; set; }
     
-        public virtual Course Course { get; set; }
-        public virtual Student Student { get; set; }
+        public virtual Department Department { get; set; }
     }
 }

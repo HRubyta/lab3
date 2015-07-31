@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace comp2084_lesson4
-{
-
-
-    public partial class lesson4
-    {
-
+namespace comp2084_lesson4 {
+    
+    
+    public partial class lesson4 {
+        
         /// <summary>
         /// head control.
         /// </summary>
@@ -22,7 +20,34 @@ namespace comp2084_lesson4
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
-
+        
+        /// <summary>
+        /// plhPublic control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder plhPublic;
+        
+        /// <summary>
+        /// plhPrivate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder plhPrivate;
+        
+        /// <summary>
+        /// lblName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblName;
+        
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -31,7 +56,7 @@ namespace comp2084_lesson4
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
+        
         /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
@@ -40,7 +65,7 @@ namespace comp2084_lesson4
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
-
+        
         /// <summary>
         /// lblTimestamp control.
         /// </summary>

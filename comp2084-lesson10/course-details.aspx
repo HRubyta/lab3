@@ -1,7 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site.Master" AutoEventWireup="true" CodeBehind="course-details.aspx.cs" Inherits="comp2084_lesson10.course_details" %>
+
+<%@ Register Src="~/auth.ascx" TagPrefix="uc1" TagName="auth" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <!-- put in every page that want to be private -->
+    <uc1:auth runat="server" id="auth" />
 
     <h1>Course Detail</h1>
     <h5>All fields required</h5>

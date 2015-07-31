@@ -20,10 +20,22 @@
     <nav class="navbar navbar-default">
         <a class="navbar-brand" href="default.aspx">Contoso University</a>
         <ul class="nav navbar-nav">
-            <li><a href="departments.aspx">Departments</a></li>
-            <li><a href="courses.aspx">Courses</a></li>
-            <li><a href="students.aspx">Students</a></li>
+            <asp:PlaceHolder ID="plhPublic" runat="server">
+                <li><a href="instructor-register.aspx">Register</a></li>
+                <li><a href="login.aspx">login</a></li>
+            </asp:PlaceHolder>
+            <asp:PlaceHolder ID="plhPrivate" runat="server" >
+                <li><a href="departments.aspx">Departments</a></li>
+                <li><a href="courses.aspx">Courses</a></li>
+                <li><a href="students.aspx">Students</a></li>
+                <li><a href="logout.aspx">Log out</a></li>
+            </asp:PlaceHolder>
         </ul>
+
+        <div class="pull-right">
+            <asp:Label ID="lblName" runat="server"/>
+        </div>
+        
     </nav>
     <form id="form1" runat="server" class="form-horizontal">
     <div class="container">

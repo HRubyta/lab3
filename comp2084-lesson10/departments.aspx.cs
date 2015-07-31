@@ -28,7 +28,14 @@ namespace comp2084_lesson10
             //use entity framework to connect and get the list of departments
             using (DefaultConnection db = new DefaultConnection())
             {
+                //old query that show all department
+                //var deps = from d in db.Departments
+                 //          select d;
+                //new query filtered for logged in user only
+                Int32 DepartmentID = Convert.ToInt32(Session["DepartmentID"]);
+
                 var deps = from d in db.Departments
+                           where d.DepartmentID == DepartmentID
                            select d;
 
                 //bind the deps query result to our grid

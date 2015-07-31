@@ -11,19 +11,19 @@ namespace comp2084_lesson10.Models
 {
     using System;
     using System.Collections.Generic;
-
+    
     public partial class Student
     {
         public Student()
         {
             this.Enrollments = new HashSet<Enrollment>();
         }
-
+    
         public int StudentID { get; set; }
         public string LastName { get; set; }
         public string FirstMidName { get; set; }
         public System.DateTime EnrollmentDate { get; set; }
-
+    
         public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
 }
